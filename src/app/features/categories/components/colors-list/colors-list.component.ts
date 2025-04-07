@@ -7,10 +7,9 @@ import { Category } from '../../model/category';
 const MODULES = [MatDivider]
 
 @Component({
-	selector: 'app-colors-list',
-	standalone: true,
-	imports: [...MODULES],
-	template: `
+    selector: 'app-colors-list',
+    imports: [...MODULES],
+    template: `
 		<section class="flex flex-col gap-4 w-full mt-4 h-auto mb-4">
 			<mat-divider class="h-full opacity-50" />
 
@@ -23,7 +22,7 @@ const MODULES = [MatDivider]
 			</div>
 		</section>
   	`,
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ColorsListComponent {
 	private readonly categoryService = inject(CategoryService);

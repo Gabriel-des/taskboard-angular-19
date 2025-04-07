@@ -3,10 +3,9 @@ import { CategoryService } from '../../services/category.service';
 import { Category } from '../../model/category';
 
 @Component({
-	selector: 'app-main-list',
-	standalone: true,
-	imports: [],
-	template: `
+    selector: 'app-main-list',
+    imports: [],
+    template: `
 		<section class="mt-16 mx-12 pl-8">
 			<span class="text-2xl font-semibold">Categorias</span>
 
@@ -17,7 +16,7 @@ import { Category } from '../../model/category';
 			</ul>
 		</section>
 	`,
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MainListComponent {
 

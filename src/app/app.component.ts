@@ -6,17 +6,16 @@ import { MainComponent } from "./layout/main/main.component";
 const COMPONENTS = [ThemeToggleComponent, MainComponent]
 
 @Component({
-	selector: 'app-root',
-	standalone: true,
-	imports: [COMPONENTS],
-	template: `
+    selector: 'app-root',
+    imports: [COMPONENTS],
+    template: `
     <div class="relative min-h-screen w-full">
       <app-theme-toggle />
 
       <app-main></app-main>
     </div>
   `,
-	styles: ``,
+    styles: ``
 })
 export class AppComponent implements OnInit {
 	private themeService = inject(ThemeService);
